@@ -1,8 +1,6 @@
 plugins {
 	id "idea"
-	id "war"
 	id "org.gretty" version "3.0.6"
-	id "com.adarshr.test-logger" version "3.0.0"
 }
 repositories {
 	mavenLocal()
@@ -13,7 +11,6 @@ repositories {
 		url "https://plugins.gradle.org/m2/"
 	}
 }
-
 apply plugin: 'java'
 
 sourceCompatibility = '1.8'
@@ -22,27 +19,13 @@ targetCompatibility = '1.8'
 idea {
 	module {
 		outputDir file("$buildDir/classes/main")
-		testOutputDir file("$buildDir/classes/test")
 	}
 }
 
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
-
-tasks.withType(JavaCompile) {
-    options.compilerArgs << '-parameters'
-}
-//${zkVersion}
 dependencies {
-	//9.6.1-Eval
-	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220411-Eval"
-	implementation "org.zkoss.zk:zuti:10.0.0.FL.20220411-Eval"
-	implementation "org.zkoss.zephyr:zephyr-ex:10.0.0.FL.20220411-Eval"
-
-	// for JSR 303
-	implementation 'org.hibernate:hibernate-validator:7.0.3.Final'
-	implementation 'javax.validation:validation-api:2.0.1.Final'
+//  ZK 9.6.1
+	implementation "org.zkoss.zk:zkmax:9.6.1-Eval"
+//  ZK 10.0.0 Client MVVM Setting
+//	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220412-Eval"
+//	implementation "org.zkoss.zephyr:zephyr-ex:10.0.0.FL.20220413-Eval"
 }

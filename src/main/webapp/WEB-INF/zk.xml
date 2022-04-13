@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
-    <listener>
-        <listener-class>org.zkoss.zephyrex.bind.BinderPropertiesRenderer</listener-class>
-	</listener>
-	<library-property>
-		<name>org.zkoss.bind.defaultComposer.class</name>
-		<value>org.zkoss.zephyrex.bind.ClientBindComposer</value>
-	</library-property>
+<!-- ZK 10.0.0 Client MVVM Setting -->
+<!--    <listener>-->
+<!--        <listener-class>org.zkoss.zephyrex.bind.BinderPropertiesRenderer</listener-class>-->
+<!--	</listener>-->
+<!--	<library-property>-->
+<!--		<name>org.zkoss.bind.defaultComposer.class</name>-->
+<!--		<value>org.zkoss.zephyrex.bind.ClientBindComposer</value>-->
+<!--	</library-property>-->
 	<library-property>
 		<name>org.zkoss.zul.listbox.rod</name>
 		<value>true</value>
@@ -15,9 +16,7 @@
 		<name>org.zkoss.zul.listbox.initRodSize</name>
 		<value>500</value>
 	</library-property>
-	<client-config>
-		<debug-js>true</debug-js>
-	</client-config>
+<!-- Use LegacyDesktopIdGenerator for doing remove desktop -->
 	<system-config>
 		<id-generator-class>org.zkoss.zk.ui.impl.LegacyDesktopIdGenerator</id-generator-class>
 	</system-config>
