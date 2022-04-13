@@ -8,7 +8,7 @@ Testing project for ZK 10 Client MVVM
 
 ## How To Test
 ### Run with ZK 9.6.1 or ZK 10.0.0 FL
-#### ZK 9.6.1 FL
+#### ZK 9.6.1
 * Change the dependency in build.gradle
 ```
 implementation "org.zkoss.zk:zkmax:9.6.1-Eval"
