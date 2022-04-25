@@ -44,4 +44,4 @@ Run Visual VM.
 * (Apache JMeter) See result in "Aggregate Report" (label:/zk10-performance-test/test/listbox.zul, 99% Line)
 
 ## Result
-https://www.zkoss.org/wiki/Small_Talks/2022/April/ZK10_Preview:_3000%25_Lighter_and_30000%25_Faster_with_Client_MVVM
+https://www.zkoss.org/wiki/Small_Talks/2022/April/ZK10_Preview:_30x_Lighter_and_300x_Faster_with_Client_MVVM

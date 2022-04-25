@@ -1,6 +1,6 @@
 plugins {
 	id "idea"
-	id "org.gretty" version "3.0.6"
+	id "org.gretty" version "3.0.7"
 }
 repositories {
 	mavenLocal()
@@ -13,8 +13,8 @@ repositories {
 }
 apply plugin: 'java'
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+sourceCompatibility = org.gradle.api.JavaVersion.VERSION_11
+targetCompatibility = org.gradle.api.JavaVersion.VERSION_11
 
 idea {
 	module {
@@ -26,6 +26,6 @@ dependencies {
 //  ZK 9.6.1
 	implementation "org.zkoss.zk:zkmax:9.6.1-Eval"
 //  ZK 10.0.0 Client MVVM Setting
-//	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220412-Eval"
+//	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220413-Eval"
 //	implementation "org.zkoss.zephyr:zephyr-ex:10.0.0.FL.20220413-Eval"
 }
