@@ -16,7 +16,7 @@ implementation "org.zkoss.zk:zkmax:9.6.1-Eval"
 #### ZK 10.0.0 FL
 * Change the dependency in build.gradle
 ```
-implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220412-Eval"
+implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220413-Eval"
 implementation "org.zkoss.zephyr:zephyr-ex:10.0.0.FL.20220413-Eval"
 ```
 * Add ZK 10 Client MVVM settings in zk.xml
