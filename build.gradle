@@ -3,7 +3,6 @@ plugins {
 	id "org.gretty" version "3.0.7"
 }
 repositories {
-	mavenLocal()
 	mavenCentral()
 	maven { url "https://mavensync.zkoss.org/maven2" }
 	maven { url "https://mavensync.zkoss.org/eval" }
