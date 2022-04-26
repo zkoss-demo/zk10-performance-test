@@ -2,7 +2,7 @@
 Testing project for ZK 10 Client MVVM
 
 ## Prerequisites
-* JDK Version: 1.8
+* JDK Version: 11
 * Apache JMeter 5.4.3
 * Visual VM 2.1.2
 
