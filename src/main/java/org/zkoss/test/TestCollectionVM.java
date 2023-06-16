@@ -10,7 +10,7 @@ import org.zkoss.test.service.ItemService;
 public class TestCollectionVM {
 	private ItemService itemService = ItemService.getInstance();
 
-	public List<Integer> getList() {
+	public List<String> getList() {
 		return itemService.getItems(); //simulate database
 	}
 }
