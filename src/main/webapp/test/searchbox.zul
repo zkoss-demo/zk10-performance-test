@@ -1,0 +1,8 @@
+<zk>
+    loading this page takes a long time
+    <searchbox viewModel="@id('vm')@init('org.zkoss.test.SearchboxVM')" model="@init(vm.model)" multiple="true" autoclose="true">
+        <template name="model">
+            <label value="@load(each)"/>
+        </template>
+    </searchbox>
+</zk>
