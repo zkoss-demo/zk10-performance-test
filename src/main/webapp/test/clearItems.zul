@@ -1,0 +1,18 @@
+<zk>
+    <div viewModel="@id('vm')@init('org.zkoss.test.ClearItemsVM')">
+        <button label="do fill" onClick="@command('fill')" />
+        <button label="do clear" onClick="@command('clear')" />
+        <listbox model="@load(vm.model)">
+            <custom-attributes org.zkoss.zul.listbox.rod="false"/>
+            <template name="model">
+                <listitem>
+                    <forEach var="cell" items="@load(each)" >
+                        <listcell>
+                            <textbox value="@load(cell['data'])"/>
+                        </listcell>
+                    </forEach>
+                </listitem>
+            </template>
+        </listbox>
+    </div>
+</zk>
