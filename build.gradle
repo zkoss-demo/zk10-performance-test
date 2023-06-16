@@ -22,9 +22,8 @@ idea {
 }
 
 dependencies {
-//  ZK 9.6.1
-	implementation "org.zkoss.zk:zkmax:9.6.1-Eval"
+//	implementation "org.zkoss.zk:zkmax:9.6.4-Eval"
 //  ZK 10.0.0 Client MVVM Setting
-//	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20220413-Eval"
-//	implementation "org.zkoss.zephyr:zephyr-ex:10.0.0.FL.20220413-Eval"
+	implementation "org.zkoss.zk:zkmax:10.0.0.FL.20230509-Eval"
+	implementation "org.zkoss.zk:client-bind:10.0.0.FL.20230509-Eval"
 }

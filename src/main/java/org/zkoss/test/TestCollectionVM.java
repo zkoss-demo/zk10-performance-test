@@ -1,8 +1,8 @@
-package org.zkoss.zephyr.test;
+package org.zkoss.test;
 
 import java.util.List;
 
-import org.zkoss.zephyr.test.service.ItemService;
+import org.zkoss.test.service.ItemService;
 
 /**
  * @author jameschu

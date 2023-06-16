@@ -1,6 +1,6 @@
 <zk>
 	<!-- apply="org.zkoss.bind.BindComposer"-->
-	<window title="Test for Listbox" border="normal" viewModel="@id('vm') @init('org.zkoss.zephyr.test.TestCollectionVM')">
+	<window title="Test for Listbox" border="normal" viewModel="@id('vm') @init('org.zkoss.test.TestCollectionVM')">
 		<listbox width="200px" height="200px" model="@load(vm.list)">
 			<template name="model">
 				<listitem label="@load(each)" />
