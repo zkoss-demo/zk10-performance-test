@@ -1,0 +1,11 @@
+<zk xmlns:h="native">
+    <vlayout style="margin:10vh">
+        <h:ul>
+            <h:li><a href="/comparison.zul?vmClass=org.zkoss.test.Bug&amp;file=largeTree.zul">largeTree.zul</a></h:li>
+            <h:li><a href="/comparison.zul?vmClass=org.zkoss.test.ClearItemsVM&amp;file=clearItems.zul&amp;rod=true">clearItems.zul (ROD enabled)</a></h:li>
+            <h:li><a href="/comparison.zul?vmClass=org.zkoss.test.ClearItemsVM&amp;file=clearItems.zul&amp;rod=false">clearItems.zul (no ROD)</a></h:li>
+            <h:li><a href="/comparison.zul?vmClass=org.zkoss.test.TestCollectionVM&amp;file=listbox.zul">listbox.zul</a></h:li>
+            <h:li><a href="/comparison.zul?vmClass=org.zkoss.test.SearchboxVM&amp;file=searchbox.zul">searchbox.zul</a></h:li>
+        </h:ul>
+    </vlayout>
+</zk>

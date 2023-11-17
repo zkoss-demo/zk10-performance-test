@@ -1,18 +1,55 @@
 <zk>
-    <div viewModel="@id('vm')@init('org.zkoss.test.ClearItemsVM')">
-        <button label="do fill" onClick="@command('fill')" />
-        <button label="do clear" onClick="@command('clear')" />
-        <listbox model="@load(vm.model)">
-            <custom-attributes org.zkoss.zul.listbox.rod="false"/>
-            <template name="model">
-                <listitem>
-                    <forEach var="cell" items="@load(each)" >
-                        <listcell>
-                            <textbox value="@load(cell['data'])"/>
-                        </listcell>
-                    </forEach>
-                </listitem>
-            </template>
-        </listbox>
+    <div>
+        <button label="do fill" onClick="@command('fill')"/>
+        <button label="do clear" onClick="@command('clear')"/>
     </div>
+    <listbox model="@load(vm.model)" vflex="1">
+        <custom-attributes org.zkoss.zul.listbox.rod="${rod}"/>
+        <listhead>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+            <listheader width="103px"/>
+        </listhead>
+        <template name="model">
+            <listitem>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+                <listcell>
+                    <textbox value="@load(each)" width="85px"/>
+                </listcell>
+            </listitem>
+        </template>
+    </listbox>
 </zk>
